@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+/* container board-container board player1 player2 heading dice*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  
+}
+@keyframes fadeIn {
+  from
+{
+  opacity: 0;
+}  
+to
+{
+  opacity: 0;
+}
+}
+#bb,#bb1
+{
+  width:300px;
+  padding:20px;
+  margin:20px;
+  font-weight: bold;
+  border: #000000;
+  border-radius: 5%;
+  background-color: #ffffff;
+  cursor: pointer;
+  visibility: visible;
+ 
+}
+#bb:hover , #bb1:hover
+{
+  background-color: #eb3349;
+}
+#status
+{
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  padding:50px;
+}
+
+.container {
+  max-width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to right, #ff4b2b, #ff416c);
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  
+ 
+}
+
+.dice-game {
+  max-width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container,
+.board-container {
+  width: 100%;
+  height: 70vh;
+  background: #ffffff;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-heading {
+  width: 100%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.input-boxes {
+  margin-top: 30px;
+  width: 60%;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  margin: 10px 0;
+  position: relative;
+}
+
+.input-group input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 0 30px;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.input-group input:focus {
+  border-color: #ff4b2b;
+}
+
+.input-group i {
+  position: absolute;
+  color: #ff4b2b;
+  font-size: 17px;
+}
+
+.button {
+  margin-top: 40px;
+}
+
+.button input {
+  color: #ffffff;
+  background: #ff4b2b;
+  border-radius: 5px;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.button input:hover {
+  background: linear-gradient(to right, #eb3349, #f45c43);
+}
+
+/* .board-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+} */
+
+.board {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.player1,
+.player2 {
+  width: 50%;
+  height: 100%;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.player1 {
+  background: #f5f5f5;
+}
+
+.heading {
+  font-size: 6vh;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  text-align: center;
+}
+
+.score {
+  color: #ff4b2b;
+  font-size: 10vh;
+  
+}
+
+.dice {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dice img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#player-1-button,
+#player-2-button{
+    width: 50%;
+}
+
+#player-1-button input[disabled],
+#player-2-button input[disabled] {
+  background: #f5f5f5;
+  color: #000000;
+  cursor: not-allowed;
+}
+
+.winner {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    opacity: 0.5;
+    background: url("../images/winner.gif");
+    z-index: 100;
+}
+@media only screen and (min-width:200px) and (max-width:767px)
+{
+  .container {
+    max-width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+    display: grid;
+    grid-template-columns:10px 200px 100px;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    
+   
+  }
+  
+
+.board-container {
+  width: 100%;
+  height: 50vh;
+  background: #ffffff;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.board {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.heading {
+  font-size:15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  text-align: center;
+}
+
+.score {
+  color: #ff4b2b;
+  font-size: 15px;
+  
+}
+#player-1-button,
+#player-2-button{
+    width: 90%;
+}
+#bb,#bb1
+{
+  width:80px;
+  padding:10px;
+  margin:10px;
+  font-weight: bold;
+  font-size:10px;
+  border: #000000;
+  border-radius: 5%;
+  background-color: #ffffff;
+  cursor: pointer;
+  visibility: visible;
+ 
+}
+}

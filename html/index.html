@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../style/form.css"></link>
+    <title>Dice Game</title>
+</head>
+<body>
+    <div id="container" class="container">
+        <div id="dice-game" class="dice-game">
+            
+            <form class="form-container" id="form-container" onSubmit="onSubmit(event)">
+                <h1 class="form-heading">
+                    Please Enter Game Details
+                </h1>
+                <div class="input-boxes">
+                    <div class="input-group">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Enter Player 1 Name" required />
+                    </div>
+                    <div class="input-group">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Enter Player 2 Name" required />
+                    </div>
+                    <div class="input-group">
+                        <i class="fas fa-trophy"></i>
+                        <input type="number" placeholder="Enter Total Score" min="10" max="100" required />
+                    </div>
+                    <div class="input-group button">
+                        <input type=submit value="Start Game" />
+                    </div>
+                </div>
+            </form>
+
+            
+        </div>
+    
+        <!-- <button id="reset_game" style="background-color: white;color:black;width:100px;height: 100px;" value="Reset Game" onclick="resetgame()">Reset Game</button>
+        <button id="reset_game_with_other_names" value="Reset Game With Other Names" onclick="resetgamewithothernames()"></button> -->
+    </div>
+    
+</body>
+<script src="../"></script>
+</html>
