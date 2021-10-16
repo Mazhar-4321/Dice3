@@ -54,7 +54,7 @@ function onSubmit(event) {
   else
   {
     console.log("hiiii");
-          window.close();
+         // window.close();
     window.open("html/game.html");
  
   
