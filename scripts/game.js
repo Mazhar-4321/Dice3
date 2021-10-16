@@ -57,8 +57,9 @@ function resetgamewithothernames()
   //}
 //  else
  // {
-    window.open("../index.html");
-window.close();
+    window.location.replace("../index.html");
+    //window.open("../index.html");
+
   //}
 }
 function onSubmit(event) {
