@@ -19,13 +19,14 @@ to
 }
 #bb,#bb1
 {
-  width:300px;
+width:300px;
   padding:20px;
   margin:20px;
   font-weight: bold;
   border: #000000;
   border-radius: 5%;
-  background-color: #ffffff;
+  background: #ff4b2b;
+  color:#ffffff;
   cursor: pointer;
   visibility: visible;
  
