@@ -40,12 +40,14 @@ function onSubmit(event) {
   firstPlayerName = formData[0].value;
   secondPlayerName = formData[1].value;
   totalScore = formData[2].value;
-  window.open("html/game.html");
+ // window.open("html/game.html");
   
   localStorage["p1_name"]=firstPlayerName;
   localStorage["p2_name"]=secondPlayerName;
   localStorage["total_score"]=totalScore;
-  window.close();
+        var win=window.open("html/game.html","_self");
+  win.close();
+  //window.close();
 //   document.getElementById("form-container").style.display = "none";
 //   document.getElementById("board-container").style.display = "block";
 //   document
