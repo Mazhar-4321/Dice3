@@ -54,10 +54,11 @@ function onSubmit(event) {
   else
   {
     console.log("hiiii");
+          window.close();
     window.open("html/game.html");
  
   
-  window.close();
+  
   }
   //window.close();
 //   document.getElementById("form-container").style.display = "none";
