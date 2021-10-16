@@ -50,16 +50,16 @@ document.getElementById("container").removeChild(document.getElementById("chch")
 }
 function resetgamewithothernames()
 {
- if(window.chrome)
-  {
-window.open("../index.html","_self");
-window.close();
-  }
-  else
-  {
+ //if(window.chrome)
+  //{
+//window.open("../index.html","_self");
+//window.close();
+  //}
+//  else
+ // {
     window.open("../index.html");
 window.close();
-  }
+  //}
 }
 function onSubmit(event) {
   event.preventDefault();
