@@ -141,7 +141,7 @@ function checkIfWinnerExists() {
       button.id="bb";
       var button1 = document.createElement("BUTTON");
       button1.id="bb1";
-      button1.innerHTML="Reset With Name"
+      button1.innerHTML="Restart"
       button.onclick=resetgame;
       button1.onclick=resetgamewithothernames;
       div.appendChild(button)
