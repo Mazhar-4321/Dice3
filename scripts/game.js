@@ -50,7 +50,7 @@ document.getElementById("container").removeChild(document.getElementById("chch")
 }
 function resetgamewithothernames()
 {
-window.open("../index.html");
+window.open("../index.html","_self");
 window.close();
 }
 function onSubmit(event) {
